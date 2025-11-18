@@ -1,0 +1,22 @@
+//   Given an integer N, return the number of digits in N.
+// Input:N = 12345
+// Output:5
+// Explanation:  The number 12345 has 5 digits.
+#include<iostream>
+using namespace std;
+int main(){
+	int num,i=0,n;
+	cout<<"Enter your number:"<<endl;
+	cin>>num;
+	n = num;
+	if(num < 1){
+	cout<<"Total no.of digits is 1"<<endl;
+	}
+	else{
+	while(n > 0){
+		n = n / 10;
+		i++	;
+	}
+	}
+	cout<<"Total no.of digits in your number is "<<i;
+}
